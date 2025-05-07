@@ -3,17 +3,18 @@
 **Live App:** [https://socialpulse2.streamlit.app](https://socialpulse2.streamlit.app)  
 **Author:** Ximena Castaño
 
-Social Pulse is a prototype app that analyzes Instagram activity using web scraping, machine learning, and interactive data visualization. Built as part of an AI educational initiative, this tool demonstrates how brands or researchers can explore engagement patterns and optimize content strategies.
+Social Pulse is a modular AI prototype that analyzes Instagram activity using web scraping, machine learning, and interactive dashboards. It demonstrates how brands or researchers can explore engagement patterns and optimize digital content strategies using open-source tools.
 
 ---
 
 ## ✨ Features
 
-- 🔍 Web scraping (Instagram profiles using BeautifulSoup/Selenium)
-- 🧹 Data cleaning and preprocessing (pandas)
-- 🤖 Machine Learning classification (scikit-learn, hyperparameter tuning)
-- 📊 Visual dashboard with Streamlit
-- 🗃️ Modular code for educational reuse
+- 🔍 Web scraping and automated data extraction
+- 🧹 ETL pipeline for cleaning and structuring data
+- 📊 EDA to uncover insights and visualize key patterns
+- 🤖 Machine Learning for engagement prediction
+- 🧪 Model evaluation and tuning
+- 📺 Streamlit dashboard for interactive exploration
 
 ---
 
@@ -32,9 +33,10 @@ cd SocialPulse
 pip install -r requirements.txt
 ```
 
-3. Run the app:
+3. Launch the Streamlit app:
 
 ```bash
+cd streamlit_app
 streamlit run app.py
 ```
 
@@ -42,13 +44,13 @@ streamlit run app.py
 
 ## 🧠 Educational Design
 
-This project was designed with learning in mind. The app is structured in **modules**, and each core concept is explained with markdown and comments:
-- Web scraping basics
-- Feature engineering
-- Model training and evaluation
-- Visualization with feedback loops
+This project is designed for both prototype testing and instructional use. Each folder maps to a learning module:
 
-Instructors and learners can adapt the code and documentation to their own datasets.
+- **ETL-EDA/**: scripts for extracting, transforming, and analyzing data
+- **Modelos_Prediccion/**: machine learning models and evaluation
+- **streamlit_app/**: front-end interface and visualizations
+
+Ideal for instructors or learners exploring AI use cases in marketing, social media, or applied data science.
 
 ---
 
@@ -56,37 +58,37 @@ Instructors and learners can adapt the code and documentation to their own datas
 
 ### Dashboard Overview
 
-![Dashboard](images/dashboard.png)
+![Dashboard](streamlit_app/images/dashboard.png)
 
-### Engagement Analysis
+### ML Prediction Output
 
-![Engagement](images/engagement.png)
-
-> *(You can add your own screenshots in the `/images` folder.)*
+![Prediction](streamlit_app/images/prediction.png)
 
 ---
 
-## 🧾 File Structure
+## 📁 Project Structure
 
 ```
 SocialPulse/
 │
-├── app.py                 # Main Streamlit app
-├── requirements.txt       # Project dependencies
-├── README.md              # Project documentation
-├── /images/               # Screenshots for docs
-├── /data/                 # Raw or cleaned data (optional)
-└── /utils/                # Utility functions or modules (optional)
+├── Datasets/              # Raw and cleaned datasets
+├── ETL-EDA/               # Data extraction, cleaning, and EDA notebooks
+├── Modelos_Prediccion/    # Machine learning models and results
+├── streamlit_app/         # Streamlit app interface and visuals
+│   ├── app.py             # Main dashboard logic
+│   └── images/            # Visual assets for documentation
+├── LICENSE
+└── README.md              # Project documentation
 ```
 
 ---
 
 ## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is licensed under the [GPL-2.0 License](LICENSE).
 
 ---
 
 ## 🙌 Contact
 
-Have feedback or ideas for improvements? Reach out via [LinkedIn](https://www.linkedin.com/in/ximenacastano/) or create an issue in the repo.
+Reach out via [LinkedIn](https://www.linkedin.com/in/tu-perfil/) or open an issue in this repository to collaborate or suggest improvements.
