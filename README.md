@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ```bash
 cd streamlit_app
-streamlit run app.py
+streamlit run main.py
 ```
 
 ---
@@ -75,7 +75,7 @@ SocialPulse/
 ├── ETL-EDA/               # Data extraction, cleaning, and EDA notebooks
 ├── Modelos_Prediccion/    # Machine learning models and results
 ├── streamlit_app/         # Streamlit app interface and visuals
-│   ├── app.py             # Main dashboard logic
+│   ├── main.py             # Main dashboard logic
 │   └── images/            # Visual assets for documentation
 ├── LICENSE
 └── README.md              # Project documentation
