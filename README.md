@@ -89,4 +89,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## 🙌 Contact
 
-Have feedback or ideas for improvements? Reach out via [LinkedIn](https://www.linkedin.com/in/tu-perfil/) or create an issue in the repo.
+Have feedback or ideas for improvements? Reach out via [LinkedIn](https://www.linkedin.com/in/ximenacastano/) or create an issue in the repo.
